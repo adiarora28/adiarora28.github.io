@@ -152,9 +152,9 @@ h3{font-family:var(--display);font-weight:700;font-size:22px;line-height:1.25;le
 .hob{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
 .hob div{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
 .hob h4{font-family:var(--mono);font-weight:500;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0 0 10px}
-.hob ul{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.hob ul{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:6px 22px}
 .hob li{margin:0;font-family:var(--display);font-weight:500;font-size:18px;letter-spacing:-.01em}
-.hob li+li::before{content:"/";color:var(--accent);margin-right:8px}
+.hob li::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--accent);margin-right:9px;vertical-align:middle;position:relative;top:-2px}
 
 /* contact */
 .contact{display:flex;flex-wrap:wrap;gap:12px 18px;align-items:center;font-family:var(--mono);font-size:15px}
@@ -221,7 +221,7 @@ footer{padding-block:30px 60px;border-top:1px solid var(--line);font-family:var(
   <div class="body">
     <p class="big">I like numbers, and supply chain is a field where numbers <em>decide things</em>: what to make, what to stock and when to move it.</p>
     <p>I spent more than five years as an SAP IBP consultant on demand planning, inventory optimisation, supply planning and S&amp;OP. I configured and tuned forecasting models for clients, and I wanted to understand how the algorithms behind them work. So I'm doing an MSc in Data Science at EPITA, where I now build the models, pipelines and evaluations myself.</p>
-    <p>I bring something most students don't: I know how a planner uses a forecast, and what happens when it's wrong.</p>
+    <p>My goal is to build forecasting and machine-learning systems that help planners and teams make better decisions, in an industry where the numbers matter.</p>
     <div class="seeking">
       <div class="seek"><h4>Roles I'm looking for</h4><ul><li>Machine learning</li><li>Data science</li><li>Data engineering</li><li>Data analytics</li></ul></div>
       <div class="seek"><h4>Industries I know or want to learn</h4><ul><li>Supply chain</li><li>Healthcare</li><li>Food &amp; FMCG</li><li>Retail &amp; e-commerce</li></ul></div>
@@ -325,10 +325,10 @@ footer{padding-block:30px 60px;border-top:1px solid var(--line);font-family:var(
   <h2>Beyond work</h2>
   <div class="body">
     <svg class="ridge" viewBox="0 0 520 90" fill="none" aria-hidden="true"><path d="M0 84 L60 52 L96 66 L170 14 L222 58 L262 36 L330 80 L392 30 L440 60 L486 40 L520 62" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><path d="M0 88 H520" stroke="var(--line)" stroke-width="1"/></svg>
-    <p class="big" style="font-size:clamp(18px,2.2vw,22px)">I love nature and mountains. Most of my free time goes to being outside, and the rest to the kitchen and the camera.</p>
+    <p class="big" style="font-size:clamp(18px,2.2vw,22px)">I love nature and mountains. Most of my free time goes to being outdoors with a camera, and the rest to the kitchen.</p>
     <div class="hob">
-      <div><h4>Outdoors</h4><ul><li>Running</li><li>Cycling</li><li>Hiking</li><li>Trekking</li></ul></div>
-      <div><h4>Indoors</h4><ul><li>Cooking</li><li>Baking</li><li>Photography</li></ul></div>
+      <div><h4>Outdoors</h4><ul><li>Running</li><li>Cycling</li><li>Hiking</li><li>Trekking</li><li>Nature photography</li></ul></div>
+      <div><h4>Indoors</h4><ul><li>Cooking</li><li>Baking</li></ul></div>
     </div>
   </div>
 </section>
@@ -336,7 +336,7 @@ footer{padding-block:30px 60px;border-top:1px solid var(--line);font-family:var(
 <section id="contact">
   <h2>Contact</h2>
   <div class="body">
-    <p class="big" style="font-size:clamp(18px,2.2vw,22px)">I'm looking for a 6-month internship in France. If you have a team that needs someone who understands both the forecast and the planner, I'd like to talk.</p>
+    <p class="big" style="font-size:clamp(18px,2.2vw,22px)">I'm looking for a 6-month internship in France in machine learning, data science, data engineering or data analytics. If you have a project where I can contribute and keep learning, I'd like to hear about it.</p>
     <div class="contact">
       <code id="mail">aditya_arora@live.com</code>
       <button class="btn primary" id="copy" type="button">Copy email</button>
